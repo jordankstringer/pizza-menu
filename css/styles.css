@@ -1,0 +1,13 @@
+#output {
+  display: none;
+}
+
+p {
+  position: fixed;
+  bottom: 0;
+  text-align: left;
+}
+
+.jumbotron {
+    background-image: url("http://data.whicdn.com/images/127698038/large.gif");
+}

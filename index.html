@@ -18,7 +18,7 @@
       <form id="pizza-menu">
         <div class="form-group">
           <label for="">Pizza Size:</label>
-          <select class="form-control">
+          <select class="form-control" id="pizza-option">
             <option value="small">Small - 10"</option>
             <option value="medium">Medium - 12"</option>
             <option value="large">Large - 14"</option>
@@ -27,48 +27,52 @@
 
           <h3>Toppings:</h3>
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1"> Pepperoni
+            <input type="checkbox" class="inlineCheckbox" value="option1"> Pepperoni
           </label>
 
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox2" value="option2"> Sausage
+            <input type="checkbox" class="inlineCheckbox" value="option2"> Sausage
           </label>
 
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox3" value="option3"> Black Olives
+            <input type="checkbox" class="inlineCheckbox" value="option3"> Black Olives
           </label>
 
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox4" value="option4"> Green Peppers
+            <input type="checkbox" class="inlineCheckbox" value="option4"> Green Peppers
           </label>
 
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox5" value="option5"> Mushrooms
+            <input type="checkbox" class="inlineCheckbox" value="option5"> Mushrooms
           </label>
 
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox6" value="option6"> Onions
+            <input type="checkbox" class="inlineCheckbox" value="option6"> Onions
           </label>
 
           <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox7" value="option7"> Anchovies
+            <input type="checkbox" class="inlineCheckbox" value="option7"> Anchovies
           </label>
 
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="option8">
+              <input type="checkbox" value="option8" class="inlineCheckbox">
               Extra Marinara Sauce
             </label>
 
             <label>
-              <input type="checkbox" value="option9">
+              <input type="checkbox" value="option9" class="inlineCheckbox">
               Extra Cheese
             </label>
           </div>
 <br>
           <button class="btn btn-primary" type="submit">Place Your Order Here!</button>
 
+          <div id="output">
+            <h3>Your total cost is $<span id="sum"></span>.00</h3>
+          </div>
 
+          <p>* Pizza size is measured in diameter. ** All additional add-ons cost $1.00</p>
 
       </form>
     </div>
