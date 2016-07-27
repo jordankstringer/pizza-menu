@@ -25,3 +25,15 @@ Pizza.prototype.cost = function() {
   return price;
 
 };
+
+
+
+$(document).ready(function() {
+  $("form#pizza-menu").submit(function(event) {
+    event.preventDefault();
+
+    var newPizza = new Pizza(pizzaSize);
+    var pizzaSize = $("select#pizza-option").val();
+    var addon = $("input.inlineCheckbox:checkbox:checked").each(function() {
+      newPizza.addon.push(addon);
+    });
